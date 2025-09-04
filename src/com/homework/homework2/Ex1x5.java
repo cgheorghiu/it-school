@@ -22,8 +22,8 @@ public class Ex1x5 {
         }
 
         System.out.println("The reversed array is: ");
-        for (int i = 0; i < arr.length ; i++) {
-            System.out.print(arr[i] + " ");
+        for (int el : arr) {
+            System.out.print(el + " ");
         }
     }
 }

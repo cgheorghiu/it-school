@@ -7,7 +7,7 @@ public class Ex1x4 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Please inser the length of the array: ");
+        System.out.print("Please insert the length of the array: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
         int[] arrCopy = new int[n];

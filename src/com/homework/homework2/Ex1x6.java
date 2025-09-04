@@ -7,7 +7,7 @@ public class Ex1x6 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Please inser the length of both arrays: ");
+        System.out.print("Please insert the length of both arrays: ");
         int n = sc.nextInt();
         int[] arr1 = new int[n];
         int[] arr2 = new int[n];
