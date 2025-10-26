@@ -17,6 +17,7 @@ import java.util.Scanner;
 //11. Write a Java program to reverse elements in a array list.
 //12. Write a Java program to extract a portion of a array list.
 //13. Write a Java program to compare two array lists.
+//15. Write a Java program to join two array lists.
 //16. Write a Java program to clone an array list to another array list.
 //17. Write a Java program to empty an array list.
 //18. Write a Java program to test an array list is empty or not.
@@ -82,7 +83,7 @@ public class ColorList {
 
         List<String> subList1 = colors.subList(1, 4);
         List<String> subList2 = colors.subList(1, 4);
-        List<String> subList3 = colors.subList(2, 4);
+        List<String> subList3 = colors.subList(4, 7);
         System.out.println("The portion of the list is:" + subList1);
         System.out.println(subList1.equals(subList2));
         System.out.println(subList1.equals(subList3));
@@ -95,9 +96,14 @@ public class ColorList {
         System.out.println("empty: " + clonedColorList);
         isEmptyList(clonedColorList);
 
+        clonedColorList.add("light blue");
+        clonedColorList.add("pink");
+
+        colors.addAll(clonedColorList);
+        System.out.println("New color list: " + colors);
+
         colors.trimToSize();
         System.out.println("ArrayList after trimToSize(): " + colors);
-
 
         colors.ensureCapacity(10);
         System.out.println("Capacity increased to accommodate at least 10 elements.");
